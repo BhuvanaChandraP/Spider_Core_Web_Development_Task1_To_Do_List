@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+</head>
+<body >
+  
+    <h1 id = "hi"></h1>
+   
+
+
+    <h3 id = "Choose">Choose clock style :</h3>
+    <div id = "Choose1">
+        <button id = "digital" onclick="displayDigital()">Digital</button>
+        <button id ="analog"  onclick="displayAnalog()">Analog</button>
+
+    </div>
+    <div id="digitalclock">0:00:00</div>
+    <canvas id="canvas" width="200" height="200"></canvas>
+
+
+    <h2 id = "displayDate"></h2>
+    <h1 id = "topic">To-Do List</h1>
+   
+    <h2 class = "titletoday">Today's task</h2>
+    
+    <div class="container">
+
+      
+      <form  action="#">
+        <div class = "a1">
+          <input  class = "todos" type="text" name="item" id="item" placeholder=" Add New....."  required/>
+          
+          <button class = "addToDo" onclick ="myFunction();myFunction1()" >add to do</button>
+          
+        </div>
+
+        
+        <br>
+        <div class = "a1">
+         
+          <input class = "date" type="date"   name="myDate" id="myDate" value="" required>
+         
+          <input id = "time" type="time" name="time" value="" step="60" required> 
+          
+        </div>
+        
+      </form>  
+    <ul id="list" ></ul>
+   
+    <ul id="completed" width= "300px" style ="position:absolute;width:300px;top:210px;margin-left: 0px;margin-top: 0px;font-size:10px;"></ul>
+      
+    
+    
+
+    </div>
+    <audio id="mouse">
+      <source src="mouseclick.wav" type="audio/wav">          
+    </audio>
+    <audio id="mousedelete">
+      <source src="delete.wav" type="audio/wav">          
+    </audio>
+
+
+
+
+    <div class="wrapper">
+
+      <div class="container-calendar">
+          <h3 id="monthAndYear"></h3>
+          
+          <div class="button-container-calendar">
+           <div class="footer-container-calendar">    <button id="previous" onclick="previous()">&#8249;</button>
+            
+               <label for="month">Jump To: </label>
+               <select id="month" onchange="jump()">
+                   <option value=0>Jan</option>
+                   <option value=1>Feb</option>
+                   <option value=2>Mar</option>
+                   <option value=3>Apr</option>
+                   <option value=4>May</option>
+                   <option value=5>Jun</option>
+                   <option value=6>Jul</option>
+                   <option value=7>Aug</option>
+                   <option value=8>Sep</option>
+                   <option value=9>Oct</option>
+                   <option value=10>Nov</option>
+                   <option value=11>Dec</option>
+               </select>
+               <button id="next" onclick="next()">&#8250;</button>
+               
+               <select id="year" style="margin-left: 115px;" onchange="jump()"></select>   
+         
+              
+          </div>
+           </div>
+          <table class="table-calendar" id="calendar" data-lang="en">
+              <thead id="thead-month"></thead>
+              <tbody id="calendar-body"></tbody>
+          </table>
+          
+         
+  
+      </div>
+      
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src = "app.js"></script>
+</body>
+</html>

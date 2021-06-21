@@ -1,0 +1,415 @@
+*{
+  /* background-color: rgb(23, 36, 95); */
+  margin:0px;
+  padding: 0px;
+  background-color: rgb(252, 255, 211);
+}
+
+#displayDate
+{
+  position: absolute;
+  top:20px;
+  margin-left: 20px;
+  font-family: 'Merienda';font-size: 20px;
+  /* margin-top: 20px; */
+}
+
+
+
+#digitalclock {
+  font-size: 30px;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: red;
+  font-weight: bolder;
+  position: absolute;
+  top:10px; 
+  right:30px;
+}
+#canvas
+{
+  position: absolute;
+  top:5px;
+  right:30px
+}
+#Choose
+{
+  position: absolute;
+  top:70px;
+  left:30px;
+  font-family: 'Merienda';font-size: 19px;
+}
+#Choose1
+{
+  position: absolute;
+  top:105px;
+  left:30px;
+}
+#digital{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: bolder;
+  border-color: rgb(112, 48, 5);
+  margin-left: 20px;
+}
+#analog{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: bolder;
+  border-color: rgb(112, 48, 5);
+  margin-left: 20px;
+}
+
+
+.a1
+{
+  display:flex;
+  justify-content: center; 
+}
+.todos{
+  
+  width:40%;
+  height: 25px;
+  border-radius: 7px;
+  border-color: blue;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  /* margin: 20px; */
+  /* padding-left: 400px; */
+}
+.addToDo{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: bolder;
+  border-color: rgb(112, 48, 5);
+  margin-left: 20px;
+  /* display:flex;
+  justify-content: center;  */
+
+}
+.addToDoWithDate
+{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: bolder;
+  border-color: rgb(112, 48, 5);
+  margin-left: 20px;
+}
+.date  
+{
+  border-color: blue;
+  border-radius: 5px;
+  text-align: center;
+}
+.fixtime{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: bolder;
+  border-color: rgb(112, 48, 5);
+  margin-left: 20px;
+}
+form{
+  padding: 20px;
+  margin: auto;
+
+
+  /* width:400px; */
+  
+}
+
+#hi
+{
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  font-size: 35px;
+  text-shadow: 3px 3px 3px #d8d8d8;
+  /* font-family: 'Merienda';font-size: 22px; */
+}
+#topic{     
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  font-size: 35px;
+  text-shadow: 3px 3px 3px #c4c4c4;
+  /* font-family: 'Merienda';font-size: 22px; */
+}
+
+#time{
+  border-color: blue;
+  border-radius: 5px;
+  text-align: center;
+  /* padding: 10px; */
+  margin-left: 20px;
+  /* padding: 5px;
+  border-radius: 5px;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-weight: bolder;
+  border-color: rgb(112, 48, 5);
+  margin-left: 20px; */
+}
+  
+
+
+#list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#list li {
+    color: #131414;
+    font-weight: 400;
+    border-bottom: 1px solid #cfcbcc;
+    line-height: 1.5;
+    padding: 8px 0;
+    text-align: center;
+}
+    
+
+.checked {
+  color:green; 
+    
+}
+
+#list li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background:  rgb(250, 113, 188);
+  font-size: 18px;
+  transition: 0.2s;
+  width: 600px; 
+   display: flex;
+  justify-content: center;
+  margin: auto; 
+  /* text-align: center;*/
+  
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+#list li:nth-child(odd) {
+ background:rgb(253, 177, 249);
+}
+
+
+#list li:hover {
+ background: rgb(217, 253, 117);
+}
+
+
+#list li.checked {
+ background: rgb(87, 255, 110);
+ color: #fff;
+ text-decoration: line-through;
+}
+
+
+#list li.checked::before {
+ content: '';
+ position: absolute;
+ border-color: rgb(255, 255, 255);
+ border-style: solid;
+ border-width: 0 2px 2px 0;
+ top: 10px;
+ left: 16px;
+ transform: rotate(45deg);
+ height: 15px;
+ width: 7px;
+}
+#completed li{
+  font-size: 15px;
+  margin-left: 20px;
+  background-color: rgb(83, 141, 248);
+  padding: 4px;
+  list-style-type: none;
+}
+#completed li:nth-child(odd) {
+  background:rgb(159, 209, 255);
+ }
+
+ #completed li.checked {
+  background: rgb(99, 255, 120);
+  color: #fff;
+  text-decoration: line-through;
+ }
+ #completed li:hover {
+  background: rgb(255, 154, 95);
+ }
+.titletoday
+{
+  position:absolute;
+  top:160px;
+  margin-left: 20px;
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #c4c4c4;
+  
+}
+.expired
+{
+  position:absolute;
+  top:80px;
+  margin-right: 0px;
+  right: 40px;
+}
+
+
+.wrapper {
+
+  position: absolute;
+  right: 10px;
+  top:70px;
+ margin: 150px 15px; 
+
+ max-width: 1100px;
+ /* background-color: #555858; */
+}
+
+.container-calendar {
+ background: #ff0404;
+ padding: 5px;
+ max-width: 280px;
+ /* max-width: 475px; */
+ /* margin: 0 auto; */
+ /* margin: auto; */
+ overflow: auto;
+}
+
+.button-container-calendar button {
+ cursor: pointer;
+ display: inline-block;
+ zoom: 1;
+ background: #00a2b7;
+ color: #fff;
+ border: 1px solid #0aa2b5;
+ border-radius: 4px;
+ padding: 5px 10px;
+}
+
+.table-calendar {
+ border-collapse: collapse;
+ width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+ padding: 2px;
+ border: 1px solid #e2e2e2;
+ text-align: center;
+ vertical-align: top;
+}
+
+.date-picker.selected {
+ font-weight: bold;
+ outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+ border-bottom: 2px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(7) {
+color: red;
+}
+
+/* friday */
+.date-picker:nth-child(6) {
+color: rgb(22, 228, 22);
+}
+
+#monthAndYear {
+ text-align: center;
+ margin-top: 0;
+}
+
+.button-container-calendar {
+ position: relative;
+ margin-bottom: 1em;
+ overflow: hidden;
+ clear: both;
+}
+
+#previous {
+ float: left;
+}
+
+#next {
+ float: right;
+}
+
+.footer-container-calendar {
+ margin-top: 1em;
+ border-top: 1px solid #dadada;
+ padding: 2px 0;
+}
+
+.footer-container-calendar select {
+ cursor: pointer;
+ display: inline-block;
+ zoom: 1;
+ background: #ffffff;
+ color: #585858;
+ border: 1px solid #bfc5c5;
+ border-radius: 3px;
+ padding: 5px 1em;
+}
+
+.footer-container-calendar label { 
+padding-left: 25px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
