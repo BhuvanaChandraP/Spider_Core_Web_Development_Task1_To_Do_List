@@ -6,7 +6,7 @@ var hello = document.getElementById("hi");
 hello.innerHTML += "Hi" + "&nbsp &nbsp" + userName + "!!" ;
 var userName1 = userName + 1;
 console.log(userName1);
-alert("Turn on notifications to get notified with your tasks");
+//alert("Turn on notifications to get notified with your tasks");
 let ask = "Make to do";
 // notification.classList.add('ask');
 
@@ -334,7 +334,7 @@ setInterval(clock, 1000);
            
             if(!storedValues) {
               list.innerHTML = '<li>Make a to do list</li>';
-              showNotification1();                 
+              //showNotification1();                 
             }
             else {
               list.innerHTML = storedValues;
@@ -351,11 +351,11 @@ setInterval(clock, 1000);
             
             if(!storedValues1 ) {
               
-              showNotification1();                 
+              //showNotification1();                 
             }
             else {
               comp.innerHTML = storedValues1;
-              showNotification();
+              //showNotification();
               //list.innerHTML = '<button>delete</button>'
             }
           }
