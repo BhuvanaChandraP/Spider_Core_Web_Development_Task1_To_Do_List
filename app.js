@@ -10,16 +10,16 @@ console.log(userName1);
 let ask = "Make to do";
 // notification.classList.add('ask');
 
-function showNotification(){
-  const noti = new Notification("New message",{
-    body: "you have some pending work"
-  });
-}
-function showNotification1(){
-  const noti = new Notification("New message",{
-    body:"Add some works here"
-  });
-}
+// function showNotification(){
+//   const noti = new Notification("New message",{
+//     body: "you have some pending work"
+//   });
+// }
+// function showNotification1(){
+//   const noti = new Notification("New message",{
+//     body:"Add some works here"
+//   });
+// }
 
 var x1 = document.getElementById("mouse"); 
 
