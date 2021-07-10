@@ -230,7 +230,10 @@ setInterval(clock, 1000);
 
            
         (function(){
-  
+            
+           localstorage.clear();
+           
+           
             var list = document.querySelector('#list');
             var  form = document.querySelector('form');
             var  item = document.querySelector('#item');
