@@ -231,7 +231,7 @@ setInterval(clock, 1000);
            
         (function(){
             
-           localstorage.clear();
+           localStorage.clear();
            
            
             var list = document.querySelector('#list');
